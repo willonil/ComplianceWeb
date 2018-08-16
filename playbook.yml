@@ -1,6 +1,6 @@
 ---
 - name: Instala o Lamp nas maquinas
-  hosts: infra_prod
+  hosts: web
   tasks:
   - name: Instala o Lamp nas maquinas
     yum: name=lamp state=present
