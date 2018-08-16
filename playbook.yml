@@ -3,4 +3,4 @@
   hosts: web
   tasks:
   - name: Instala o Lamp nas maquinas
-    yum: name=lamp state=present
+    dnf: name=lamp state=present
