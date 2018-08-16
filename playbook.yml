@@ -2,5 +2,8 @@
 - name: Instala o Lamp nas maquinas
   hosts: web
   tasks:
-  - name: Instala o Lamp nas maquinas
-    dnf: name=lamp state=present
+  - name: Instala o apache nas maquinas
+    dnf: name=httpd state=present
+
+  - name: Inicia o apache
+    service: name=httpd state=started
